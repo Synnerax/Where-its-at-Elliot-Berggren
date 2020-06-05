@@ -39,6 +39,11 @@
       "id": "41765262-6180-41bb-871f-fc79c6bcb964",
       "Event": "Lasse Stefanz",
       "Redeemed": false
+    },
+    {
+      "id": "b50d52da-3454-44be-95be-45d18dad52b0",
+      "Event": "Pelle trubadur",
+      "Redeemed": true
     }
   ],
   "users": [

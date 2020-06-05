@@ -256,7 +256,7 @@ a {
 }
 
 .events {
-    width: 50rem;
+    width: 50vw;
     height: 25rem;
     justify-content: space-between;
 
@@ -297,7 +297,7 @@ a {
 
 .add-event {
     
-    width: 26rem;
+    width: 28vw;
     height: 30rem;
     
     margin-left: .5rem;
