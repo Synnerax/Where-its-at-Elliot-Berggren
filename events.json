@@ -1,0 +1,58 @@
+{
+  "Events": [
+    {
+      "Name": "Lasse Stefanz",
+      "Where": "Kjell Härnqvist salen",
+      "Date": "21 Dec",
+      "From": "06.00",
+      "To": "11.00",
+      "Tickets": "300",
+      "Price": "350",
+      "id": "c7b96641-135d-458f-8cd0-1666dc26d7d9",
+      "Sold": 0
+    },
+    {
+      "Name": "Pelle trubadur",
+      "Where": "Pubelipuben",
+      "Date": "14 Mars",
+      "From": "09.00",
+      "To": "21.00",
+      "Tickets": "100",
+      "Price": "450",
+      "id": "553793e1-5358-49cd-9fc3-ff80d3afbda4",
+      "Sold": 0
+    },
+    {
+      "Name": "Kajsas kör",
+      "Where": "Götaplatsen",
+      "Date": "24 Jan",
+      "From": "04.00",
+      "To": "08.00",
+      "Tickets": "1000",
+      "Price": "200",
+      "id": "93ed1ce3-ff7c-4a50-b698-22f76eb66eea",
+      "Sold": 0
+    }
+  ],
+  "Tickets": [
+    {
+      "id": "41765262-6180-41bb-871f-fc79c6bcb964",
+      "Event": "Lasse Stefanz",
+      "Redeemed": false
+    }
+  ],
+  "users": [
+    {
+      "uuid": "9bda62b3-52cb-4d5c-93a0-94da942535da",
+      "username": "admin",
+      "password": "$2b$10$7SkRMD5dUjBOnP.wuKBWlebEoQZdcEksvLi3LYhtg2d/u42Kerf8m",
+      "role": "admin"
+    },
+    {
+      "uuid": "c44f98c5-df5b-4cda-bc7e-bfc18cc5045b",
+      "username": "staff",
+      "password": "$2b$10$1Q9aJTYJk8t34bfgFUgI3.Bi8oDXxUpfq5.L6MmBygJyBEBJZuViK",
+      "role": "user"
+    }
+  ]
+}

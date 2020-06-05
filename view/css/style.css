@@ -1,0 +1,666 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.staff-color {
+    background:  #F39440;
+    height: 100vh;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.staff-header {
+    height: 12rem;
+    display: flex;
+    margin: 2rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.staff-header > img:nth-child(1) {
+    width: 8rem;
+}
+
+.header-where-text {
+
+    height: 52px;
+    font-family: 'Sansita', sans-serif;    font-style: normal;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
+
+.header-staff-text {
+
+    height: 35px;
+
+
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.3em;
+
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.wrapper {
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+.form-input {
+    height: 3rem;
+    margin: 1rem;
+    width: 65vw;
+    font-family: Fira Mono;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 0.3em;
+    background: #F39440;
+    color: #090911;
+    border: 2px solid #231F42;
+
+    border-radius: 3px;
+
+}
+
+.form-input::placeholder { 
+    color: black;
+    opacity: 1; 
+}
+
+.admin-form-input {
+    height: 3rem;
+    margin: 1rem;
+    width: 65vw;
+    color: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 3px;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+
+
+.add-event-font {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.form-button {
+    height: 3rem;
+    margin: 2rem;
+    width: 65vw;
+    background: #231F42;
+    border-radius: 0px 0px 3px 3px;
+
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    
+    color: #FFFFFF;
+}
+
+#create-button {
+    width: 191px;
+    height: 40px;
+    background: #F56B9A;
+    border-radius: 3px;
+    margin-left: 0.8rem;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+
+
+
+.hide {
+    display: none;
+}
+
+
+.ticket-input {
+    height: 5rem;
+    margin-top: 1rem;
+    width: 65vw;
+
+    font-family: Fira Mono;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.3em;
+    background: #F39440;
+    color: #090911;
+
+    border: 2px solid #231F42;
+    border-radius: 3px 3px 0px 0px;
+}
+
+.ticket-input::placeholder { 
+    color: black;
+    opacity: 1; 
+}
+
+.verify-button {
+    height: 3rem;
+    width: 65vw;
+        
+    background: #231F42;
+    border-radius: 0px 0px 3px 3px;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    color: #FFFFFF;
+    background: #231F42;
+    border: 2px solid #231F42;
+    border-radius: 0px 0px 3px 3px;
+}
+
+
+.body-color {
+    background: #231F42;
+    
+}
+
+.body-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.admin-header {
+    width: 100vw;
+}
+
+.admin-header > img:nth-child(1) {
+    width: 6rem;
+}
+
+.events-overlay {
+    display: flex;
+    margin-top: 10rem;
+    margin-left: 8rem;
+}
+
+
+.event-board-text{
+    width: 100%;
+    height: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.event-board {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+.overlay-text {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 16px;
+    display: flex;
+    text-transform: uppercase;
+    margin: .5rem;
+
+    color: #F56B9A;
+}
+
+.events {
+    width: 50rem;
+    height: 25rem;
+    justify-content: space-between;
+
+
+
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid #000000;
+    box-sizing: border-box;
+}
+
+
+.events-name {
+    width: 30%;
+}
+
+.events-place {
+    width: 20%;
+}
+
+.events-tickets {
+    width: 15%;
+}
+
+.event {
+    color: white;
+}
+
+.event h3 {
+    
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.event p {
+    
+    font-size: 13px;
+}
+
+.add-event {
+    
+    width: 26rem;
+    height: 30rem;
+    
+    margin-left: .5rem;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.add-event-text {    
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 31px;
+    display: flex;
+    align-items: center;
+    margin: .5rem;
+
+    color: #F56B9A;
+}
+
+
+.event-input {
+    height: 100%;
+    width: 80%;
+}
+
+.event-form-inputs {
+    display: flex;
+    justify-content: center;
+}
+.event-form-infos {
+    width: 45%;
+    height: 2.5rem;
+}
+
+.event-form-info {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    color: rgba(255, 255, 255, 0.6);;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 3px;
+}
+
+
+.event-info-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 6rem;
+}
+
+.sansita {
+    font-family: 'Sansita', sans-serif;    font-style: normal;
+
+}
+
+.events-header {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 37px;
+    line-height: 37px;
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+
+    color: #F56B9A;
+
+
+}
+
+
+#active-events {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#event {
+    display: flex;
+    width: 23rem;
+    height: 5rem;
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#info-container{
+    border-bottom: 1px solid grey;
+    width: 100%;
+}
+
+
+#time {
+    margin-right: 1.5rem;
+    width: 4rem;
+    height: 4rem;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+.date-text {
+    width: 1.5rem;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.href-container {
+    width: 75%;
+}
+.name-font{
+    
+font-family: Fira Sans;
+font-style: normal;
+font-weight: 600;
+font-size: 25px;
+line-height: 26px;
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+text-shadow: 1px 1px 0px #F56B9A;
+}
+
+.location-font {
+    font-family: Fira Sans;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#from-to {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #D0D0D0;
+}
+
+#price {
+
+}
+
+.price-font {
+
+        font-family: Fira Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 17px;
+        color: #37AEAB;
+        margin-left: auto;
+        
+
+}
+.date {
+    border: 1px solid grey;
+    width: 66px;
+    height: 66px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+   }
+   
+
+.price-time-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+
+
+.buy-header {
+    
+    font-family: Fira Sans;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 23px;
+    text-align: center;
+    margin: 5rem;
+    width: 13rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#buy-main {
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+#buy-name {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 41px;
+    margin-left: .5rem;
+
+    color: #F56B9A
+}
+
+.buy-date-info {
+    
+font-family: Fira Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 19px;
+line-height: 23px;
+
+
+color: #37AEAB;
+}
+
+.buy-location {
+    font-family: Fira Sans;
+font-style: italic;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+
+
+color: rgba(255, 255, 255, 0.7);
+}
+
+
+.buy-price {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 38px;
+
+
+    color: #FFFFFF;
+    margin: 6rem;
+    text-shadow: 1px 1px 0px #F56B9A;
+}
+
+
+.buy-button-href {
+    margin-top: 4rem;
+}
+#buy-button {
+    
+    width: 310px;
+    height: 60px;
+    background: #37AEAB;
+    border-radius: 3px;
+    
+}
+
+.ticket-body {
+    height: 100vh;
+    background: linear-gradient(180deg, #F56B9A 0%, #231F42 50%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ticket {
+    width: 311px;
+    height: 450px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.34);
+    border-radius: 3px;
+}
+
+#name-container {
+    width: 100%;
+    height: 20%;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.34);
+    border-radius: 3px;
+    
+}
+
+#location-container {
+    width: 311px;
+    height: 120px;
+    background: rgba(0, 0, 0, 0.03);
+}
+
+#date-time-container {
+    display: flex;
+    flex-direction: row;
+    width: 311px;
+    height: 66px;
+    left: 32px;
+    top: 313px;
+    background: rgba(0, 0, 0, 0.06);
+}
+
+
+
+.event-name-span {
+    margin-bottom: auto;
+    margin-left: .5rem;
+
+    font-weight: bold;
+    font-size: 12px;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+
+.event-location {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    margin-left: .5rem;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+
+
+.small-date-container {
+    width: 33%;
+    height: 100%;
+    border: 1px dashed rgba(0, 0, 0, 0.4);
+}
+
+.small-date-center {
+    margin-top: .5rem;
+    text-align: center;
+}
+
+
+
+#barcode-container {
+    background: rgba(0, 0, 0, 0.12);
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.barcode-img {
+    width: 50%;
+}
+
+.barcode-ticket {
+    letter-spacing: 0.3em;
+    color: rgba(0, 0, 0, 0.4);
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sansita:ital,wght@1,800;1,900&display=swap" rel="stylesheet">     <title>Document</title>
+</head>
+<body class="body-color">
+    <header class="admin-header">
+        <img src="img/logo-colour.png" alt="Admin Logo">
+    </header>
+    <main class="events-overlay">
+
+        <section class="events">
+            <section class="event-board-text">
+                <span class="overlay-text events-name">NAMN</span>
+    
+                <span class="overlay-text events-place">VAR</span>
+    
+                <span class="overlay-text events-seats">ANTAL PLATSER</span>
+    
+                <span class="overlay-text events-sold-seats">SÅLDA BILJETTER</span>
+            </section>
+            <section class="event-board"></section>
+
+        </section>
+    
+        <section class="add-event">
+            <span class="add-event-text">Add Event</span>
+            <section class="event-wrapper">
+                <section class="event-form-inputs">
+                    <input type="text" placeholder="Name" id="name" class="admin-form-input">
+                </section>
+                <section class="event-form-inputs">
+                    <input type="text" placeholder="Where" id="location" class="admin-form-input">
+                </section>
+                <section class="event-form-inputs">
+                    <input type="text" placeholder="Date" id="date" class="admin-form-input">
+                </section>
+                    <section class="event-info-wrapper">
+                        <section class="event-form-infos">
+                            <input type="text" placeholder="From Time" id="from-time" class="event-form-info">
+                        </section>
+                        <section class="event-form-infos">
+                            <input type="text" placeholder="To Time" id="to-time" class="event-form-info">
+                        </section>
+                        <section class="event-form-infos">
+                            <input type="text" placeholder="Tickets" id="tickets" class="event-form-info">
+                        </section>
+                        <section class="event-form-infos">
+                            <input type="text" placeholder="Price" id="price" class="event-form-info">
+                        </section>
+                    </section>
+                    <button id="create-button" type="submit">Click</button>
+                
+            </section>
+        </section>
+    </main>
+    <script tpye="module" src="./js/admin.js"></script>
+</body>
+</html>
